@@ -12,9 +12,9 @@
     "build": "webpack",
     "build-watch": "webpack-dev-server --inline --hot",
     "start": "node server.js",
-    "heroku-postbuild": "webpack -p --progress"
+    "heroku-postbuild": "webpack"
   },
-  
+
   "engines": {
     "node": "4.4.7"
   },
