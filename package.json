@@ -10,7 +10,12 @@
     "test": "karma start --single-run",
     "test-watch": "karma",
     "build": "webpack",
-    "build-watch": "webpack-dev-server --inline --hot"
+    "build-watch": "webpack-dev-server --inline --hot",
+    "engines": {
+      "node": "4.4.7"
+    },
+    "start": "node server.js",
+    "heroku-postbuild": "webpack -p --progress"
   },
   "author": "Carlo",
   "license": "MIT",
@@ -28,6 +33,7 @@
     "clean-webpack-plugin": "^0.1.16",
     "css-loader": "^0.28.4",
     "dotenv": "^4.0.0",
+    "express": "^4.15.3",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.2",
     "html-loader": "^0.4.5",
