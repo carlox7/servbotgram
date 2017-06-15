@@ -11,10 +11,14 @@
     "test-watch": "karma",
     "build": "webpack",
     "build-watch": "webpack-dev-server --inline --hot",
-    "engines": { "node": "4.4.7" },
     "start": "node server.js",
     "heroku-postbuild": "webpack -p --progress"
   },
+  
+  "engines": {
+    "node": "4.4.7"
+  },
+
   "author": "Carlo",
   "license": "MIT",
   "dependencies": {
